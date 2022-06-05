@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
@@ -15,14 +15,65 @@
         <form action="https://register-demo.freecodecamp.org" method="get">
             <fieldset>
                 <legend>Basic User Info</legend>
-                <label>Enter Your First Name: <input type="text" name="firstname" id="firstname" required></label>
-                <label>Enter Your Last Name: <input type="text" name="lastname" id="lastname" required></label>
-                <label>Enter Your Email: <input type="email" name="email" id="email" required></label>
-                <label>Create a Password: <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}"
-            required></label>
+                <label>
+                    Enter Your First Name:
+                    <input type="text" name="firstname" id="firstname" required />
+                </label>
+                <label>
+                    Enter Your Last Name:
+                    <input type="text" name="lastname" id="lastname" required />
+                </label>
+                <label>
+                    Enter Your Email:
+                    <input type="email" name="email" id="email" required />
+                </label>
+                <label>
+                    Create a Password:
+                    <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}" required />
+                </label>
             </fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Account Type</legend>
+                <label>
+                    <input type="radio" name="account-type" id="personal" />
+                    Personal Account
+                </label>
+                <label>
+                    <input type="radio" name="account-type" id="business" />
+                    Business Acccount
+                </label>
+                <label>
+                    <input type="checkbox" name="termsAccept" id="termsAccept" required />
+                    I accept the
+                    <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                <label>
+                    Upload a profile picture:
+                    <input type="file" name="picture" id="picture" />
+                </label>
+                <label>
+                    Input your age (years):
+                    <input type="number" name="age" id="age" min="13" max="120" />
+                </label>
+                <label>
+                    How did you hear about us?
+                    <select name="ads">
+                        <option value="">(select one)</option>
+                        <option value="freeCodeCamp YouTube Channel">freeCodeCamp YouTube Channel</option>
+                        <option value="freeCodeCamp News">freeCodeCamp News</option>
+                        <option value="freeCodeCamp Forum">freeCodeCamp Forum</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label>
+                    Provide a bio:
+                    <textarea name="bio" id="bio" rows="3" cols="30"
+                        placeholder="I like coding on the beach..."></textarea>
+                </label>
+            </fieldset>
             <input type="submit" value="Submit" />
         </form>
     </div>
