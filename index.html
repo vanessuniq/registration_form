@@ -15,6 +15,7 @@
         <form action="https://register-demo.freecodecamp.org" method="get">
             <fieldset>
                 <legend>Basic User Info</legend>
+                <hr>
                 <label>
                     Enter Your First Name:
                     <input type="text" name="firstname" id="firstname" required />
@@ -34,22 +35,24 @@
             </fieldset>
             <fieldset>
                 <legend>Account Type</legend>
+                <hr>
                 <label>
-                    <input type="radio" name="account-type" id="personal" />
+                    <input class="inline" type="radio" name="account-type" id="personal" />
                     Personal Account
                 </label>
                 <label>
-                    <input type="radio" name="account-type" id="business" />
+                    <input class="inline" type="radio" name="account-type" id="business" />
                     Business Acccount
                 </label>
                 <label>
-                    <input type="checkbox" name="termsAccept" id="termsAccept" required />
+                    <input class="inline" type="checkbox" name="termsAccept" id="termsAccept" required />
                     I accept the
                     <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Additional Info</legend>
+                <hr>
                 <label>
                     Upload a profile picture:
                     <input type="file" name="picture" id="picture" />
